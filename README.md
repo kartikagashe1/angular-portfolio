@@ -1,5 +1,8 @@
 # Kartik Angular Portfolio
 
+
+A personal portfolio website built using Angular to showcase my projects, skills, and experience.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
 
 ## 🌐 Live Demo
@@ -15,6 +18,13 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ### 🛠 Skills Section
 ![Skills Section](src/screenshots/skills.png)
+
+## 🛠 Tech Stack
+- Angular 19
+- TypeScript
+- HTML5
+- CSS3
+- Netlify
 
 ## Development server
 
