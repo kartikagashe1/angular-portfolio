@@ -3,7 +3,7 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
 
 ## 🌐 Live Demo
-👉 https://thunderous-beignet-5f4472.netlify.app/
+👉 https://kartik-web-portfolio.netlify.app/
 
 ## Development server
 
