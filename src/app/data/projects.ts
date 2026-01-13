@@ -15,8 +15,8 @@ export const PROJECTS: Project[] = [
     tech: ['Angular', 'TypeScript', 'Bootstrap'],
     date: 'Jan 2026',
     images: ['portfolio1.png', 'portfolio2.png', 'portfolio3.png','portfolio4.png','portfolio5.png'],
-    github: 'https://github.com/kartikagashe1/Angular-Portfolio.git',
-    liveDemo: 'https://www.kartiksportfolio.live/'
+    github: 'https://github.com/kartikagashe1/angular-portfolio.git',
+    liveDemo: 'https://thunderous-beignet-5f4472.netlify.app/'
   },
    {
     title: 'Current Weather Explorer App',
