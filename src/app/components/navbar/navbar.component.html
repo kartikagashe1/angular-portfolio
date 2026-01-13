@@ -1,0 +1,56 @@
+<mat-toolbar class="navbar" role="navigation">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <img src="assets/coding2.png" class="name-logo" />
+     <span class="logo-text">Print(Kartik.dev<span class="blink">_</span>)</span>
+
+    </div>
+
+    <!-- Desktop Nav -->
+    <ul class="nav d-none d-xxl-flex">
+      <li>
+        <a class="nav-link btn btn-outline-light btn-sm px-3" href="assets/documents/Kartik Resume.pdf" target="_blank" download>
+          Download CV
+        </a>
+      </li>
+      <li><a class="nav-link" href="#hero">Home</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+      <li>
+        <button class="theme-toggle-btn" (click)="toggleDarkMode()">
+          {{ isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode' }}
+        </button>
+      </li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <div class="d-xxl-none">
+      <button class="hamburger-icon" (click)="menuOpen = !menuOpen">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slide-in Mobile Menu with Overlay -->
+<div class="menu-overlay d-md-none" *ngIf="menuOpen" (click)="menuOpen = false"></div>
+
+<div class="mobile-menu-wrapper d-md-none" [class.open]="menuOpen">
+  <div class="mobile-menu" (click)="$event.stopPropagation()">
+    <a class="nav-link" href="#hero"><mat-icon>home</mat-icon></a>
+    <a class="nav-link" href="#about"><mat-icon>person</mat-icon></a>
+    <a class="nav-link" href="#projects"><mat-icon>work</mat-icon></a>
+    <a class="nav-link" href="#skills"><mat-icon>code</mat-icon></a>
+    <a class="nav-link" href="#contact"><mat-icon>mail</mat-icon></a>
+   <a class="nav-link" href="assets/documents/Kartik Resume.pdf" target="_blank" download>
+  <mat-icon>download</mat-icon>
+</a>
+
+    <button class="theme-toggle-btn mt-2" (click)="toggleDarkMode()">
+      {{ isDarkMode ? '☀️' : '🌙' }}
+    </button>
+  </div>
+</div>
+
+</mat-toolbar>

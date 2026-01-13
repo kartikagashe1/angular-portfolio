@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+  scroll-behavior: smooth;
+} */
+ /* Default Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Section backgrounds */
+body.light-theme .hero-section,
+body.light-theme .about-section,
+body.light-theme .projects-section,
+body.light-theme .skills-section,
+body.light-theme .contact-section,
+body.light-theme .footer-section {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark-theme .hero-section,
+body.dark-theme .about-section,
+body.dark-theme .projects-section,
+body.dark-theme .skills-section,
+body.dark-theme .contact-section,
+body.dark-theme .footer-section {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* Cards and boxes */
+body.dark-theme .about-box,
+body.dark-theme mat-card {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+body.light-theme .about-box,
+body.light-theme mat-card {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+}
+
+/* Form fields */
+body.dark-theme input,
+body.dark-theme textarea {
+  background-color: #2e2e2e;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+  color: #aaa;
+}
+
+/* Footer styling */
+body.dark-theme .footer-section {
+  background-color: #0d0d0d;
+  color: #dcdcdc;
+}
+
+body.light-theme .footer-section {
+  background-color: #212529;
+  color: #ffffff;
+}
+/* heading appealing */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1976d2;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: #1976d2;
+  left: 20%;
+  bottom: 0;
+  border-radius: 2px;
+  opacity: 0.4;
+}
+
+.section-title i {
+  color: #1565c0;
+}
+
+/*DARK THEME TEXT FIX (REQUIRED) */
+
+/* Headings */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #ffffff !important;
+}
+
+/* Paragraphs & generic text */
+body.dark-theme p,
+body.dark-theme span,
+body.dark-theme small,
+body.dark-theme li {
+  color: #cccccc !important;
+}

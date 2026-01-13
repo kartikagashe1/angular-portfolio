@@ -1,0 +1,41 @@
+.skills-section {
+  padding: 100px 20px;
+  background-color: var(--section-bg);
+  color: var(--text-color);
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  color: var(--link-color);
+}
+
+.skills-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-card h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.skills-card ul {
+  padding-left: 18px;
+  margin: 0;
+  list-style: disc;
+  font-size: 0.95rem;
+}
+
+.skills-card ul li {
+  margin-bottom: 6px;
+}

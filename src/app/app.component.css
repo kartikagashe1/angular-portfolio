@@ -1,0 +1,65 @@
+/* dark mode css all */
+:root[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --section-bg: #f8f9fa;
+  --footer-bg: #212529;
+  --footer-text: #ffffff;
+  --card-bg: #ffffff;
+  --card-text: #212529;
+}
+
+:root[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --section-bg: #1e1e1e;
+  --footer-bg: #0d0d0d;
+  --footer-text: #dcdcdc;
+  --card-bg: #252525;
+  --card-text: #e0e0e0;
+}
+
+/* Global base styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sections */
+.hero-section,
+.about-section,
+.projects-section,
+.skills-section,
+.contact-section {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Footer */
+.footer-section {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+/* Cards like about-box or project cards */
+.about-box,
+mat-card {
+  background-color: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Inputs and textareas (contact form) */
+input, textarea {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-color: #444;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+

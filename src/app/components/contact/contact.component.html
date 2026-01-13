@@ -1,0 +1,38 @@
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#1976d2"></path>
+  </svg>
+</div>
+<section id="contact" class="contact-section">
+  
+  <div class="container">
+    <h2 class="text-center mb-5 text-primary"><i class="fas fa-envelope-open-text"></i> Get In Touch</h2>
+
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="contact-form mx-auto" style="max-width: 600px;">
+      <!-- Name -->
+      <div class="form-floating mb-4">
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="contact.name" placeholder="Name" required />
+        <label for="name">Your Name</label>
+      </div>
+
+      <!-- Email -->
+      <div class="form-floating mb-4">
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="contact.email" placeholder="Email" required />
+        <label for="email">Your Email</label>
+      </div>
+
+      <!-- Message -->
+      <div class="form-floating mb-4">
+        <textarea class="form-control" id="message" name="message" [(ngModel)]="contact.message" rows="5" placeholder="Your Message" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">
+          <i class="fas fa-paper-plane me-2"></i> Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

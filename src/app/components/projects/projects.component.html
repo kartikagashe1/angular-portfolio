@@ -1,0 +1,60 @@
+<section id="projects" class="projects-section py-5">
+
+  <div class="container">
+    <h2 class="text-center mb-5 text-primary"> <i class="fas fa-code"></i> Projects </h2>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-5" *ngFor="let project of projects; let i = index">
+        <div class="card h-100 shadow-sm border-0 d-flex flex-column">
+
+          <!-- 🔄 Image Carousel -->
+          <div [id]="'carousel-' + i" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let image of project.images; let j = index" class="carousel-item" [class.active]="j === 0">
+                <img [src]="'assets/projects/' + image"
+                     class="d-block w-100 rounded-top"
+                     style="height: 200px; object-fit: cover;"
+                     [alt]="project.title + ' image ' + j" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel-' + i" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel-' + i" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- 📦 Project Content -->
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-semibold mt-3">{{ project.title }}</h5>
+            <h6 class="card-subtitle text-muted">{{ project.date }}</h6>
+            <p class="card-text mt-2">{{ project.description }}</p>
+
+            <div class="mb-3">
+              <span *ngFor="let tech of project.tech" class="badge bg-dark text-white me-1">{{ tech }}</span>
+            </div>
+
+            <!-- Link Buttons -->
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px;">
+  <a *ngIf="project.github"
+     [href]="project.github"
+     target="_blank"
+     class="btn btn-outline-dark btn-sm">
+     🐙 GitHub
+  </a>
+  <a *ngIf="project.liveDemo"
+     [href]="project.liveDemo"
+     target="_blank"
+     class="btn btn-primary btn-sm">
+     🌐 Live Demo
+  </a>
+</div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
