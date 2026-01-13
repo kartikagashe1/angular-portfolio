@@ -5,6 +5,17 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## 🌐 Live Demo
 👉 https://kartik-web-portfolio.netlify.app/
 
+## 📸 Screenshots
+
+### 🏠 Home Section
+![Home Section](src/screenshots/home.png)
+
+### 💼 Projects Section
+![Projects Section](src/screenshots/projects.png)
+
+### 🛠 Skills Section
+![Skills Section](src/screenshots/skills.png)
+
 ## Development server
 
 To start a local development server, run:
